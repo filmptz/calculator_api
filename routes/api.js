@@ -36,7 +36,7 @@ router.get('/add',(req,res)=>{
   var result = a + b
 
   res.json({
-      Result = result
+      Result : result
   })
 
 })
@@ -48,9 +48,9 @@ router.get('/sub',(req,res)=>{
     var result = a - b
   
     res.json({
-        Result = result
+        Result : result
     })
-    
+
   })
 
 module.exports = router;
