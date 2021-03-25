@@ -29,4 +29,28 @@ router.get("/cal", (req, res)=> {
     });
 });
 
+router.get('/add',(req,res)=>{
+  var input = req.query;
+  var a = parseInt(input.a) || 0;
+  var b = parseInt(input.b) || 0;
+  var result = a + b
+
+  res.json({
+      Result = result
+  })
+
+})
+
+router.get('/sub',(req,res)=>{
+    var input = req.query;
+    var a = parseInt(input.a) || 0;
+    var b = parseInt(input.b) || 0;
+    var result = a - b
+  
+    res.json({
+        Result = result
+    })
+    
+  })
+
 module.exports = router;
